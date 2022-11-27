@@ -1,4 +1,3 @@
-
 import {
   BrowserRouter as Router,
   Routes,
@@ -7,14 +6,17 @@ import {
 
 import { Home } from './pages/home'
 import { Login } from './pages/login'
+import { GlobalStyle } from './styles/global';
 
 function App() {
   return (
     <Router>
-      <Routes>
+     <GlobalStyle />
+     <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/Login" element={<Login />} />
-      </Routes>
+        <Route path="/login" element={<Login />} />
+        
+     </Routes >
     </Router>
   );
 }
